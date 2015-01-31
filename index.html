@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <script>
+      <!--
+        (function() {
+          if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            msViewportStyle.appendChild(
+              document.createTextNode("@-ms-viewport{width:auto!important}")
+            );
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+          }
+        })();
+      //-->
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="js/shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <title>Home</title>
+  </head>
+  <body>
+  
+    <script>
+      $(document).on('click','.navbar-collapse.in',function(e) {
+        if( $(e.target).is('a') ) {
+          $(this).collapse('hide');
+        }
+      });
+    </script>
+  </body>
+</html>
