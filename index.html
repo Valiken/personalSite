@@ -4,10 +4,10 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
-    <link href="css/lib/bootstrap.min.css" rel="stylesheet"/>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/app.css" rel="stylesheet"/>
-    <link href="css/parallax.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/parallax.css"/>
 
     <script>
       <!--
@@ -44,11 +44,11 @@
           </div>
           <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-brian">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
-              <li><a href="#bio">Bio</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#resume">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="home_link"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
+              <li class="bio_link"><a href="#bio">Bio</a></li>
+              <li class="projects_link"><a href="#projects">Projects</a></li>
+              <li class="information_link"><a href="#information">Information</a></li>
+              <li class="contact"><a href="#contact">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -59,7 +59,7 @@
       <div class="text-vcenter">
         <h1>Welcome</h1>
         <h3>Please enjoy.</h3>
-        <a href="#about" class="btn btn-default btn-lg">Continue</a>
+        <a href="#bio" class="btn btn-default btn-lg">Continue</a>
       </div>
     </div>
     <!-- /first section -->
@@ -86,23 +86,23 @@
         <h2 class="text-center">My Projects</h2> <hr />
         <div class="row text-center">
           <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-list"> </i>
-            <h4>Finger Tip Facts Mobile App</h4>
+            <a href="#home"><i class="glyphicon glyphicon-phone"></i></a>
+            <h4>Finger Tip Facts App</h4>
             <p>For my senior project my team and I built a hybrid mobile application using jQuery, HTML, and CSS that used a JSON API to retreive and read data from the school districts website.</p>
           </div>
           <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-leaf"> </i>
+            <a href="#home"><i class="glyphicon glyphicon-apple"></i></a>
             <h4>Snack Tzar Application</h4>
             <p>Built a simple application utilizing AngularJS and Firebase to trace snack requests for the client site I am working on at CGI. Made restocking the snack cube at work easier to coordinate.</p>
           </div>
           <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-phone-alt"> </i>
+            <a href="#home"><i class="glyphicon glyphicon-education"></i></a>
             <h4>ITC Competiton</h4>
             <p>Competed in ITC Competiton at Cal Poly Pomona with a team of five people. Placed first in the computer programming section. Built with VB.net in roughly 2 weeks worth of time during Spring 2014</p>
           </div>
           <div class="col-sm-3 col-xs-6">
-            <i class="glyphicon glyphicon-bullhorn"> </i>
-            <h4>Inventory App POF</h4>
+            <a href="#home"><i class="glyphicon glyphicon-barcode"></i></a>
+            <h4>Inventory App POC</h4>
             <p>Helped develop a proof of concept for a barcode scanning app that would help augment CGI's ERP Inventory Module. Built the proof of concept using Twitter Bootstrap, AngularJS and PhoneGap</p>
           </div>
         </div>
@@ -120,17 +120,56 @@
                 <h2 class="panel-title">Additional information</h2>
               </div>
               <div class="panel-body lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+                <p>
+                  I currently work within the City of Los Angeles as a consultant helping with configuration mangement and other tasks that are required of me. My tasks include, but are not limited to, setting up and configuring WebSphere and our applications, troubleshooting issues with the server and applications, submitting and supporting issues with our support team and other various tasks.
+                </p>
+                <p>
+                  Through my work at school and with CGI I have also had the oppurtunity to work on two hybrid mobile applications. One for my senior project at Cal Poly Pomona and a proof of concept for a barcoding and inventory application. I also have various experience with building and support websites, as well as, programming experience with Shell Scripting, Java, Python and JavaScript.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h2 class="panel-title">Additional information</h2>
+                <h2 class="panel-title">Skills</h2>
               </div>
               <div class="panel-body lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+                <table class="table table-bordered">
+                  <tr>
+                    <td>
+                      JavaScript, HTML, CSS
+                    </td>
+                    <td>
+                      SQL
+                    </td>
+                    <td>
+                      MVC
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      jQuery
+                    </td>
+                    <td>
+                      PhoneGap
+                    </td>
+                    <td>
+                      Linux
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Confiugration Management
+                    </td>
+                    <td>
+                      System Config
+                    </td>
+                    <td>
+                      Troubleshooting
+                    </td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
@@ -139,16 +178,19 @@
     </div>
     <!-- /fourth section -->
     <!-- fifth section -->
-    <div id="services" class="pad-section">
+    <div id="contact" class="pad-section">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 text-center">
-            <h3>Parallax scrolling effect is in action</h3>
-            <h4>The next is the address on Google maps</h4>
+            <h3>Contact Me</h3>
+            <h4>Please feel free to reach out and contact me through any of the methods to the right. I look forward to hearing from you!</h4>
           </div>
+
           <div class="col-sm-6 text-center">
-            <h3>Parallax scrolling effect is in action</h3>
-            <h4>The next is the address on Google maps</h4>
+            <h3>Social Media</h3>
+            <a href="https://github.com/Valiken" target="_blank"><button type="button" class="btn btn-default"><i class="fa fa-github-alt"></i> | GitHub</button></a>
+            <a href="http://www.linkedin.com/in/bnberg/" target="_blank"><button type="button" class="btn btn-default"><i class="fa fa-linkedin"></i> | LinkedIn</button></a>
+            <a href="mailto:bnberg@live.com"><button type="button" class="btn btn-default"><i class="fa fa-envelope"></i> | Email Me!</button></a>
           </div>
         </div>
       </div>
@@ -157,23 +199,18 @@
 
     <!-- footer -->
     <footer>
-      <hr />
+
       <div class="container">
-        <p class="text-right">Copyright &copy; Your Company 2014</p>
+        <p class="text-right">Copyright &copy; Brian Berg 2015</p>
       </div>
     </footer>
     <!-- /footer -->
     <!--Libraries-->
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
-    <script src="js/lib/angular.min.js"></script>
-    <script src="js/lib/angular-sanitize.min.js"></script>
-    <script src="js/lib/angular-route.min.js"></script>
 
     <!--Main application-->
-    <script src="js/init.js"></script>
     <script src="js/app.js"></script>
-
 
     <!-- Minimized Menu Closing Fix -->
     <script>
