@@ -1,7 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet"/>
+    <link href="css/parallax.css" rel="stylesheet"/>
 
     <script>
       <!--
@@ -24,7 +30,152 @@
     <title>Home</title>
   </head>
   <body>
-  
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-brian">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brian Berg</a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-brian">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
+              <li><a href="#bio">Bio</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    <!-- first section - Home -->
+    <div id="home" class="home">
+      <div class="text-vcenter">
+        <h1>Welcome</h1>
+        <h3>Please enjoy.</h3>
+        <a href="#about" class="btn btn-default btn-lg">Continue</a>
+      </div>
+    </div>
+    <!-- /first section -->
+
+    <!-- second section - About -->
+    <div id="bio" class="pad-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="img/brian.jpg" alt="Picture of myself (brian)" />
+          </div>
+          <div class="col-sm-6 text-center">
+            <h2>My name is Brian Berg</h2>
+            <p class="lead">I am a recent graduate from Cal Poly Pomona with a BS in Business Administrator and a concentration in Computer Information Systems. I am currently working for CGI as a Programmer Analyst, specalizing in Configuration Management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /second section -->
+
+    <!-- third section - Services -->
+    <div id="projects" class="pad-section">
+      <div class="container">
+        <h2 class="text-center">My Projects</h2> <hr />
+        <div class="row text-center">
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-list"> </i>
+            <h4>Finger Tip Facts Mobile App</h4>
+            <p>For my senior project my team and I built a hybrid mobile application using jQuery, HTML, and CSS that used a JSON API to retreive and read data from the school districts website.</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-leaf"> </i>
+            <h4>Snack Tzar Application</h4>
+            <p>Built a simple application utilizing AngularJS and Firebase to trace snack requests for the client site I am working on at CGI. Made restocking the snack cube at work easier to coordinate.</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-phone-alt"> </i>
+            <h4>ITC Competiton</h4>
+            <p>Competed in ITC Competiton at Cal Poly Pomona with a team of five people. Placed first in the computer programming section. Built with VB.net in roughly 2 weeks worth of time during Spring 2014</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <i class="glyphicon glyphicon-bullhorn"> </i>
+            <h4>Inventory App POF</h4>
+            <p>Helped develop a proof of concept for a barcode scanning app that would help augment CGI's ERP Inventory Module. Built the proof of concept using Twitter Bootstrap, AngularJS and PhoneGap</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /third section -->
+
+    <!-- fourth section - Information -->
+    <div id="information" class="pad-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Additional information</h2>
+              </div>
+              <div class="panel-body lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Additional information</h2>
+              </div>
+              <div class="panel-body lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /fourth section -->
+    <!-- fifth section -->
+    <div id="services" class="pad-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <h3>Parallax scrolling effect is in action</h3>
+            <h4>The next is the address on Google maps</h4>
+          </div>
+          <div class="col-sm-6 text-center">
+            <h3>Parallax scrolling effect is in action</h3>
+            <h4>The next is the address on Google maps</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /fifth section -->
+
+    <!-- footer -->
+    <footer>
+      <hr />
+      <div class="container">
+        <p class="text-right">Copyright &copy; Your Company 2014</p>
+      </div>
+    </footer>
+    <!-- /footer -->
+    <!--Libraries-->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-sanitize.min.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+
+    <!--Main application-->
+    <script src="js/init.js"></script>
+    <script src="js/app.js"></script>
+
+
+    <!-- Minimized Menu Closing Fix -->
     <script>
       $(document).on('click','.navbar-collapse.in',function(e) {
         if( $(e.target).is('a') ) {
